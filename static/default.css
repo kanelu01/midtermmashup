@@ -1,0 +1,464 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #333333;
+	font-family: 'Muli', sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+h3{
+	color: white;
+	font-size: 12pt;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 190%;
+}
+
+strong {
+}
+
+a {
+	color: #171717;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+	.image
+	{
+		display: inline-block;
+	}
+
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+hr {
+	display: none;
+}
+
+
+/*********************************************************************************/
+/* List Styles              Jesus I hate CSS hard coding                         */
+/*********************************************************************************/
+
+	ul.style1
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul.style1 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+
+	ul.style1 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	ul.style2 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0.80em 0;
+	}
+
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+
+
+
+/*********************************************************************************/
+/* Heading Titles    Maybe sonsider changing color to dark blue                  */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 2em;
+		text-transform: uppercase;
+	}
+
+	.title h2
+	{
+		letter-spacing: 0.20em;
+		font-weight: 700;
+		font-size: 2em;
+		color: #00AABB;
+	}
+
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url(images/background1.png) repeat;
+}
+
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+/*********************************************************************************/
+/* Wrappers*/
+/*********************************************************************************/
+
+#header-wrapper
+{
+	overflow: hidden;
+	background-size: 100%;
+	background: #333333;
+}
+
+
+/*********************************************************************************/
+/* Header*/
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Logo */
+/*********************************************************************************/
+
+	#logo
+	{
+		width: 500px;
+		height: 100px;
+		margin: 0 auto;
+		padding: 2em 0em;
+		text-transform: uppercase;
+		color: white;
+	}
+
+	#logo h1
+	{
+		letter-spacing: 0.10em;
+		font-size: 3em;
+	}
+
+	#logo p
+	{
+		letter-spacing: 0.10em;
+		color: #FFF;
+	}
+
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Banner*/
+/*********************************************************************************/
+
+	#banner
+	{
+		position: absolute;
+		left: 0;
+		overflow: hidden;
+		z-index: 1;
+	}
+
+	#banner .image
+	{
+		border: 5px solid #FFFFFF;
+	}
+
+
+/** MENU */
+
+#menu-wrapper
+{
+	background: #00AABB;
+}
+
+#menu {
+	overflow: hidden;
+	height: 100px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 25px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	font-weight: 600;
+	border: none;
+	color: #FFF;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	text-decoration: none;
+}
+
+#menu .current_page_item a {
+	background: #008C9A;
+}
+
+/** PAGE */
+
+#page
+{
+	position: relative;
+	overflow: hidden;
+	padding: 6em 0em 5em 0em;
+}
+
+/** CONTENT */
+
+#content
+{
+	float: right;
+	width: 790px;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: left;
+		width: 33%;
+	}
+
+	#sidebar .title h2
+	{
+		font-size: 1.6em;
+	}
+
+	#sidebar .box1
+	{
+		margin-bottom: 3em;
+	}
+
+
+/*********************************************************************************/
+/* Button Style                       god bless, hurray                          */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 1.5em;
+		padding: 0.50em 3em 0.50em 2em;
+		background: #00AABB;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+
+		.button:before
+		{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 20px;
+			text-align: center;
+			color: #FFF;
+		}
+
+
+/******************************************************************************************************************/
+/* Slideshow-- From this point on the CSS is taken from CSS provided by Dr. Hardy with some personal modifications*/
+/******************************************************************************************************************/
+
+
+#dots {
+	text-align: center;
+}
+
+/* figure {
+	display:none;
+} */
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width: auto;
+	border: 5px solid black;
+	border-radius: 25px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 20px auto 0px;
+}
+
+/* Caption text */
+figcaption {
+  color: black;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/*********************************************************************************/
+/* Contact                      						                        */
+/*********************************************************************************/
+
+
+form {
+	background: #eaeaea;
+	font-family: Arial, sans-serif;
+	width: 345px;
+	padding: 10px;
+}
+
+form[type="clock"] {
+	background: #00AABB;
+	font-family: Arial, sans-serif;
+	width: 345px;
+	padding: 10px;
+}
+
+label {
+	clear: left;
+	float: left;
+	display: block;
+	width: 100px;
+	padding-right: 10px;
+	margin-top: 10px;
+	text-align: right;
+
+}
+
+input, textarea {
+	margin-top: 10px;
+	display: block;
+}
+
+input[type = "submit"] {
+	margin-left: 110px;
+	font-size: 16px;
+
+}
+
+input[type = "clock"] {
+	padding: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+
+
+}
