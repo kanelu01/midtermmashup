@@ -11,13 +11,10 @@ function initialize() {
   }
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
 }
-//google.maps.event.addDomListener(window, content, initialize);
 
 function codeAddress(address, context) {
-  //var address = document.getElementById('address').value;
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == 'OK') {
-      //map.setCenter(results[0].geometry.location);
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location
@@ -45,7 +42,6 @@ function getLocations() {
    var searched = document.getElementById('inputsearch').value;
 
   $.ajax({
-    //url: "http://api.fixer.io/latest",
     url: 'http://localhost:8001/proxy/getlocation/?'+searched,
     method: "GET"
   }).done(function(data) {
@@ -65,12 +61,4 @@ function processingTweet(data){
     codeAddress(location, context)
   }
 
-/*  for (var i = 0; i< tweets.length; i++){
-    var text = tweets[i].text
-    var location = tweets[i].user['location']
-    var h = document.createElement("H3");
-    var t = document.createTextNode("The Location:"+" "+location +" "+ "The Tweet:"+" "+text);
-    h.appendChild(t);
-    document.body.appendChild(h);
-  }*/
 }
